@@ -1,35 +1,39 @@
-<div class="container">
-    <div class="row center vcenter hcenter">
+<footer>
+    <div class="container-fluid scifabric">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-4 "> 
+                    <p>Powered by</p>
+                    <a href="http://tinybee.ai"><img alt="Tinybee Logo" class="logo_horiz" src="{{ url_for('static', filename='img/tinybee128x128.png')}}"></a>
+                </div>
+                <div class="col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-2 col-lg-2">
 
-        <div class="col-sm-3 col-xs-12 footer-col hidden-xs">
-            <a href="http://tinybee.ai/" target="_blank">
-                <img class="img-responsive center-block ie-mid-vcenter" src="{{url_for('static', filename='img/tinybee_logo.png')}}" alt="Tinybee logo">
-            </a>
-        </div>
+                    <p><strong>{{ _('Resources') }}</strong></p>
+                    <p><a href="{{url_for('help.api')}}">API</a></p>
+                    <p><a href="{{url_for('help.tos')}}">{{ _('Terms of Use') }}</a></p>
+                    <p><a href="{{url_for('help.cookies_policy')}}">{{ _('Cookies Policy') }}</a></p>
+                    <p><a href="{{url_for('help.privacy')}}">{{ _('Privacy Policy') }}</a></p>
+                    <p><a href="{{url_for('stats.index')}}">{{ _('Stats') }}</a></p>
 
-        <div class="col-sm-6 footer-col">
-        {% if not enforce_privacy %}
-            <div class="row ie-vcenter">
-                <ul>
-                    <li>
-                        <a href="http://twitter.com/{{contact_twitter}}" target="_blank"><i class="fa fa-twitter padding-sides-xs"></i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:{{contact_email}}"><i class="fa fa-envelope padding-sides-xs"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/{{brand}}"><i class="fa fa-github padding-sides-xs"></i></a>
-                    </li>
-                </ul>
+                </div>
+
+                <div class="col-sm-4 col-md-2 col-lg-2">
+
+                    <p><strong>{{_('Licenses')}}</strong></p>
+                    <p><a href="{{url_for('help.license')}}">{{ _('Overview') }}</a></p>
+                    <p><a href="{{url_for('help.license', _anchor='projects')}}">{{ _('Projects') }}</a></p>
+                    <p><a href="{{url_for('help.license', _anchor='content')}}">{{ _('Content') }}</a></p>
+
+                </div>
+
+                <div class="col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-2 col-lg-2">
+                    <p><strong>{{_('Social')}}</strong></p>
+                    <p><a href="http://twitter.com/{{contact_twitter}}" target="_blank">
+                       <i class="fa fa-twitter padding-sides-xs"></i></a>
+                    <p><a href="mailto:{{contact_email}}">
+                       <i class="fa fa-envelope padding-sides-xs"></i></a></p>
+                </div>
             </div>
-        {% endif %}
         </div>
-
-        <div class="col-sm-3 footer-col hidden-xs">
-            <a href="http://pybossa.com/"  target="_blank">
-                <img class="img-responsive center-block ie-mid-vcenter" src="{{url_for('static', filename='img/pybossa.png')}}"  alt="PyBossa logo">
-            </a>
-        </div>
-
-    </div>
-</div>
+    </div> 
+</footer>
