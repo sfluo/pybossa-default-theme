@@ -1,0 +1,18 @@
+{% extends "projects/base.html" %}
+{% set active_page = "projects" %}
+{% set active_link  = "tasks" %}
+{% set section = _('Task Price') %}
+{% from "_formhelpers.html" import render_field %}
+
+{% block projectcontent %}
+<form id="task_price" method="post" action="{{ url_for('project.task_price', short_name=project.short_name) }}">
+    {{ form.hidden_tag() }}
+    <fieldset>
+        {{ render_field(form.price, placeholder= _('The amount of money per task that you want to pay')) }}
+        <div class="form-actions">
+            <input type="submit" value={{_('Set price')}} class="btn btn-primary" />
+            <a href="{{url_for('project.tasks', short_name=project.short_name)}}" class="btn btn-default">{{_('Cancel')}}</a>
+        </div>
+    </fieldset>
+</form>
+{% endblock %}

@@ -23,4 +23,9 @@
         {{ render_project_card_option(project, upload_method, title=_('Tasks Redundancy'), explanation=_('Change the redundancy level for the tasks'), link=url_for('project.task_n_answers', short_name=project.short_name), link_action_text=_('Redundancy'), icon='repeat')}}
     </div>
 </div>
+<div class="row">
+    <div id="task_price" class="col-md-6">
+        {{ render_project_card_option(project, upload_method, title=_('Tasks Price'), explanation=_('Set a price for each task'), link=url_for('project.task_price', short_name=project.short_name), link_action_text=_('Price'), icon='euro')}}
+    </div>
+</div>
 {% endblock %}

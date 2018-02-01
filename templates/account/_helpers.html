@@ -34,9 +34,9 @@
 
 
 {% macro render_user_profile(user, upload_method, settings, private=True) %}
-<p><strong><i class="fa fa-user"></i> {{ _('Nick')}}:</strong> {{ user.name }}</p>
+<p><strong><i class="fa fa-user"></i> </strong> {{ user.name }}</p>
 {% if private %}
-<p><strong><i class="fa fa-envelope"></i> {{_('E-mail')}}:</strong> {{user.email_addr }} 
+<p><strong><i class="fa fa-envelope"></i> </strong> {{user.email_addr }} 
     {% if (user.valid_email == False) %}
       {% if (user.confirmation_email_sent == False) %}
       <a href="{{ url_for('account.confirm_email')}}" class="btn btn-warning btn-xs">Validate email</a>
@@ -47,8 +47,9 @@
     {% endif %}
 </p>
 {% endif %}
+<p><strong><i class="fa fa-rmb"></i> </strong> {{ user.balance }}</p>
 {% if user.rank %}
-<p><strong><i class="fa fa-trophy"></i> {{ _('Rank')}}: </strong>
+<p><strong><i class="fa fa-trophy"></i> </strong>
     {% if private %}
         <a href="{{url_for('leaderboard.index')}}">
         {% endif %}
