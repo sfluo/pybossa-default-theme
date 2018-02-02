@@ -27,7 +27,7 @@
         {% else %}
         {{_('Task')}} <span class="label label-info">#{{ t.id }}</span>
         {% endif %}
-        {{ t.n_task_runs }} {{_('of')}} {{ t.n_answers }} at {{ t.price }}
+        {{ t.n_task_runs }} {{_('of')}} {{ t.n_answers }} at <i class="fa fa-rmb"></i>{{ t.price }}
     </div>
     <div class="col-md-5">
         <div class="progress"> 

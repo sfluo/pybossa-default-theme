@@ -15,7 +15,7 @@
             <button class="btn btn-sm btn-answer" value='NotKnown'>I don't know</button>
         </div><!-- End of DIV for the submission buttons -->
         <!-- Feedback items for the user -->
-        <p>You are working now on task: <span id="task-id" class="label label-warning">#</span></p>
+        <p>You are working now on task: <span id="task-id" class="label label-warning">#</span> <span id="task-price" class="label label-info"></span></p>
         <p>You have completed: <span id="done" class="label label-info"></span> tasks from
         <!-- Progress progress-bar for the user -->
         <span id="total" class="label label-inverse"></span></p>
@@ -86,6 +86,7 @@ function loadDisqus() {
          var player = PybossaPlayer(task.info.video_url, 'video-clip');
          pybossaNotify('Loading video...', false, 'loading');
          $('#task-id').html(task.id);
+         $('#task-price').html('<i class="fa fa-rmb"></i>' + task.price);
 
          $('.btn-answer').off('click').on('click', function(evt) {
              var answer = {'answer': $(this).attr("value")};

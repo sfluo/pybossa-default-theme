@@ -47,7 +47,9 @@
     {% endif %}
 </p>
 {% endif %}
-<p><strong><i class="fa fa-rmb"></i> </strong> {{ user.balance }}</p>
+<p><strong>{{ _('Balance') }}: <i class="fa fa-rmb"></i> </strong> {{ user.balance }}</p>
+<p><strong>{{ _('Pending') }}: <i class="fa fa-rmb"></i> </strong> {{ user.pending }}</p>
+<p><strong>{{ _('Withdrawn') }}: <i class="fa fa-rmb"></i> </strong> {{ user.withdrawn }}</p>
 {% if user.rank %}
 <p><strong><i class="fa fa-trophy"></i> </strong>
     {% if private %}
