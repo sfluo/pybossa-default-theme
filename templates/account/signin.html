@@ -18,7 +18,7 @@
                 <a href="{{ url_for('twitter.login', next=next) }}" class="btn btn-info btn-ssnn"><i class="fa-twitter"></i> {{ _('Twitter') }}</a>
                 {% endif %}
                 {% if auth.facebook %}
-                <a href="{{ url_for('facebook.login') }}" class="btn btn-primary btn-ssnn"><i class="fa fa-facebook"></i> {{ _('Facebook') }}</a>
+                <a href="{{ url_for('facebook.login') }}" class="btn btn-primary btn-ssnn"><i class="fa fa-facebook"></i> {{ _('acebook') }}</a>
                 {% endif %}
                 {% if auth.google %}
                 <a href="{{ url_for('google.login') }}" class="btn btn-warning btn-ssnn"><i class="fa fa-google-plus"></i> {{ _('Google') }}</a>
@@ -26,15 +26,23 @@
                 {% if auth.wechat %}
                 <a href="{{ url_for('wechat.login') }}" class="btn btn-danger btn-ssnn"><i class="fa-wechat"></i> {{ _('Wechat') }}</a>
                 {% endif %}
+                {% if auth.weibo %}
+                <a href="{{ url_for('weibo.login') }}" class="btn btn-success btn-ssnn"><i class="fa fa-weibo"></i> {{ _('Weibo') }}</a>
+                {% endif %}
+
                 {% else %}
+
                 {% if auth.wechat %}
-                <a href="{{ url_for('wechat.login') }}" class="btn btn-danger btn-ssnn"><i class="fa fa-wechat"></i> {{ _('Wechat') }}</a>
+                <a href="{{ url_for('wechat.login') }}" class="btn btn-danger btn-ssnn"><i class="fa-wechat"></i> {{_('Wechat') }}</a>
+                {% endif %}
+                {% if auth.weibo %}
+                <a href="{{ url_for('weibo.login') }}" class="btn btn-success btn-ssnn"><i class="fa fa-weibo"></i> {{ _('Weibo') }}</a>
                 {% endif %}
                 {% if auth.twitter %}
                 <a href="{{ url_for('twitter.login') }}" class="btn btn-info btn-ssnn"><i class="fa fa-twitter"></i> {{ _('Twitter') }}</a>
                 {% endif %}
                 {% if auth.facebook %}
-                <a href="{{ url_for('facebook.login') }}" class="btn btn-primary btn-ssnn"><i class="fa fa-facebook"></i> {{ _('Facebook') }}</a>
+                <a href="{{ url_for('facebook.login') }}" class="btn btn-primary btn-ssnn"><i class="fa fa-facebook"></i> {{ _('acebook') }}</a>
                 {% endif %}
                 {% if auth.google %}
                 <a href="{{ url_for('google.login') }}" class="btn btn-warning btn-ssnn"><i class="fa fa-google-plus"></i> {{ _('Google') }}</a>
