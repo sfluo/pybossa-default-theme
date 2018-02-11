@@ -1,22 +1,3 @@
-This is the default theme for the [Pybossa
-server](https://github.com/PyBossa/pybossa).
-
-![Shuttleworth Foundation Funded](http://pybossa.com/assets/img/shuttleworth-funded.png)
-
-PyBossa was inspired by the [BOSSA](http://bossa.berkeley.edu/) crowdsourcing engine but is written in
-python (hence the name!). It can be used for any distributed tasks project
-but was initially developed to help scientists and other researchers
-crowd-source human problem-solving skills!
-
-# See it in Action
-
-PyBossa powers [CrowdCrafting.org](http://crowdcrafting.org/) and [ForestWatchers.net](http://forestwatchers.net)
-
-# Installing and Upgrading
-
-This theme is automatically grabbed and installed in the PyBossa server when
-you clone the server with the option **--recursive**, as this theme is included
-as a sub-module in PyBossa.
 
 # Modifying VueJS components
 
