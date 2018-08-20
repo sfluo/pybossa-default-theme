@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.1.1\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: themes/default/templates/_navbar.html:12
 #: themes/default/templates/account/index.html:14
@@ -24,8 +24,8 @@ msgid "Community"
 msgstr "Comunità"
 
 #: themes/default/templates/_navbar.html:13
-#: themes/default/templates/base.html:78
 #: themes/default/templates/account/projects.html:13
+#: themes/default/templates/base.html:78
 #: themes/default/templates/stats/global.html:89
 msgid "Projects"
 msgstr "Progetti"
@@ -284,6 +284,13 @@ msgstr "Resetta la password"
 #: themes/default/templates/account/update.html:65
 #: themes/default/templates/account/update.html:78
 #: themes/default/templates/admin/update_category.html:23
+#: themes/default/templates/projects/importers/csv.html:24
+#: themes/default/templates/projects/importers/dropbox.html:31
+#: themes/default/templates/projects/importers/epicollect.html:26
+#: themes/default/templates/projects/importers/flickr.html:35
+#: themes/default/templates/projects/importers/gdocs.html:24
+#: themes/default/templates/projects/importers/s3.html:37
+#: themes/default/templates/projects/importers/twitter.html:44
 #: themes/default/templates/projects/new.html:27
 #: themes/default/templates/projects/new_blogpost.html:22
 #: themes/default/templates/projects/password.html:20
@@ -293,13 +300,6 @@ msgstr "Resetta la password"
 #: themes/default/templates/projects/task_scheduler.html:36
 #: themes/default/templates/projects/update.html:48
 #: themes/default/templates/projects/update_blogpost.html:24
-#: themes/default/templates/projects/importers/csv.html:24
-#: themes/default/templates/projects/importers/dropbox.html:31
-#: themes/default/templates/projects/importers/epicollect.html:26
-#: themes/default/templates/projects/importers/flickr.html:35
-#: themes/default/templates/projects/importers/gdocs.html:24
-#: themes/default/templates/projects/importers/s3.html:37
-#: themes/default/templates/projects/importers/twitter.html:44
 msgid "Cancel"
 msgstr "Cancella"
 
@@ -451,6 +451,7 @@ msgstr "Carica"
 
 #: themes/default/templates/account/update.html:47
 #: themes/default/templates/account/update.html:77
+#: themes/default/templates/projects/update.html:47
 msgid "Save the changes"
 msgstr "Salva le modifiche"
 
@@ -1623,9 +1624,9 @@ msgstr "Top 5 utenti"
 msgid "Setup task autoimporter"
 msgstr ""
 
+#: themes/default/templates/projects/snippets/options.html:4
 #: themes/default/templates/projects/task_autoimport_options.html:16
 #: themes/default/templates/projects/task_import_options.html:16
-#: themes/default/templates/projects/snippets/options.html:4
 msgid "Use one of the following available"
 msgstr "Usare uno dei seguenti disponibili"
 
@@ -1680,8 +1681,8 @@ msgstr "Il numero di risposte per task che vuoi per il progetto"
 msgid "Set redundancy"
 msgstr "Fissa ridondanza"
 
-#: themes/default/templates/projects/task_presenter_editor.html:28
 #: themes/default/templates/projects/snippets/options.html:3
+#: themes/default/templates/projects/task_presenter_editor.html:28
 msgid "Task Presenter Editor"
 msgstr "Task Presenter Editor"
 
@@ -1853,7 +1854,6 @@ msgstr "Ridondanza"
 msgid "Import tasks from templates, GDrive, or CSV"
 msgstr "Importa task da templetas, GDrive, o CSV"
 
-#: themes/default/templates/projects/tasks.html:22
 #: themes/default/templates/projects/importers/csv.html:23
 #: themes/default/templates/projects/importers/dropbox.html:30
 #: themes/default/templates/projects/importers/epicollect.html:25
@@ -1861,6 +1861,7 @@ msgstr "Importa task da templetas, GDrive, o CSV"
 #: themes/default/templates/projects/importers/gdocs.html:23
 #: themes/default/templates/projects/importers/s3.html:36
 #: themes/default/templates/projects/importers/twitter.html:43
+#: themes/default/templates/projects/tasks.html:22
 msgid "Import"
 msgstr "Importa"
 
@@ -2003,10 +2004,6 @@ msgstr "Spiega il progetto (usa Markdown!)"
 #: themes/default/templates/projects/update.html:42
 msgid "Check if you want to allow anonymous users contribute to your project"
 msgstr ""
-
-#: themes/default/templates/projects/update.html:47
-msgid "Save the changes"
-msgstr "Salva le modifiche"
 
 #: themes/default/templates/projects/update_blogpost.html:14
 msgid "Edit the blog post"

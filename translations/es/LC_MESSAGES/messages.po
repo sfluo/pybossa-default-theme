@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.1.1\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: themes/default/templates/_navbar.html:12
 #: themes/default/templates/account/index.html:14
@@ -20,8 +20,8 @@ msgid "Community"
 msgstr "Comunidad"
 
 #: themes/default/templates/_navbar.html:13
-#: themes/default/templates/base.html:78
 #: themes/default/templates/account/projects.html:13
+#: themes/default/templates/base.html:78
 #: themes/default/templates/stats/global.html:89
 msgid "Projects"
 msgstr "Proyectos"
@@ -286,6 +286,13 @@ msgstr "Restablecer mi contraseña"
 #: themes/default/templates/account/update.html:65
 #: themes/default/templates/account/update.html:78
 #: themes/default/templates/admin/update_category.html:23
+#: themes/default/templates/projects/importers/csv.html:24
+#: themes/default/templates/projects/importers/dropbox.html:31
+#: themes/default/templates/projects/importers/epicollect.html:26
+#: themes/default/templates/projects/importers/flickr.html:35
+#: themes/default/templates/projects/importers/gdocs.html:24
+#: themes/default/templates/projects/importers/s3.html:37
+#: themes/default/templates/projects/importers/twitter.html:44
 #: themes/default/templates/projects/new.html:27
 #: themes/default/templates/projects/new_blogpost.html:22
 #: themes/default/templates/projects/password.html:20
@@ -295,13 +302,6 @@ msgstr "Restablecer mi contraseña"
 #: themes/default/templates/projects/task_scheduler.html:36
 #: themes/default/templates/projects/update.html:48
 #: themes/default/templates/projects/update_blogpost.html:24
-#: themes/default/templates/projects/importers/csv.html:24
-#: themes/default/templates/projects/importers/dropbox.html:31
-#: themes/default/templates/projects/importers/epicollect.html:26
-#: themes/default/templates/projects/importers/flickr.html:35
-#: themes/default/templates/projects/importers/gdocs.html:24
-#: themes/default/templates/projects/importers/s3.html:37
-#: themes/default/templates/projects/importers/twitter.html:44
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -453,6 +453,7 @@ msgstr "Subir"
 
 #: themes/default/templates/account/update.html:47
 #: themes/default/templates/account/update.html:77
+#: themes/default/templates/projects/update.html:47
 msgid "Save the changes"
 msgstr "Guardar los cambios"
 
@@ -1610,9 +1611,9 @@ msgstr "Los 5 mejores Usuarios"
 msgid "Setup task autoimporter"
 msgstr "Configurar un autoimportador de tareas"
 
+#: themes/default/templates/projects/snippets/options.html:4
 #: themes/default/templates/projects/task_autoimport_options.html:16
 #: themes/default/templates/projects/task_import_options.html:16
-#: themes/default/templates/projects/snippets/options.html:4
 msgid "Use one of the following available"
 msgstr "Utiliza una de las siguientes"
 
@@ -1664,8 +1665,8 @@ msgstr "Número de respuestas por tarea que quieres para tu proyecto"
 msgid "Set redundancy"
 msgstr "Establecer la redundancia"
 
-#: themes/default/templates/projects/task_presenter_editor.html:28
 #: themes/default/templates/projects/snippets/options.html:3
+#: themes/default/templates/projects/task_presenter_editor.html:28
 msgid "Task Presenter Editor"
 msgstr "Editor del Presentador de Tareas"
 
@@ -1839,7 +1840,6 @@ msgstr "Redundancia"
 msgid "Import tasks from templates, GDrive, or CSV"
 msgstr "Importar las tareas de las plantillas, GDrive, o CSV"
 
-#: themes/default/templates/projects/tasks.html:22
 #: themes/default/templates/projects/importers/csv.html:23
 #: themes/default/templates/projects/importers/dropbox.html:30
 #: themes/default/templates/projects/importers/epicollect.html:25
@@ -1847,6 +1847,7 @@ msgstr "Importar las tareas de las plantillas, GDrive, o CSV"
 #: themes/default/templates/projects/importers/gdocs.html:23
 #: themes/default/templates/projects/importers/s3.html:36
 #: themes/default/templates/projects/importers/twitter.html:43
+#: themes/default/templates/projects/tasks.html:22
 msgid "Import"
 msgstr "Importar"
 
@@ -1990,10 +1991,6 @@ msgstr "Explica el proyecto (usa Markdown)"
 #: themes/default/templates/projects/update.html:42
 msgid "Check if you want to allow anonymous users contribute to your project"
 msgstr "Comprueba si quieres que usuarios anónimos contribuyan a tu proyecto"
-
-#: themes/default/templates/projects/update.html:47
-msgid "Save the changes"
-msgstr "Guardar los cambios"
 
 #: themes/default/templates/projects/update_blogpost.html:14
 msgid "Edit the blog post"
@@ -2171,10 +2168,10 @@ msgid ""
 "call, which is 100 for searches and 200 for user timelines.)"
 msgstr ""
 "Puedes usar tus propias credenciales de Twitter para hacer peticiones a "
-"la API con ellas, o usar las credenciales que proporcionamos nosotros para"
-" ello. (Esto último sólo te permitirá importar un número de tweets "
-"equivalente a una única llamada a la API de Twitter, 100 para búsquedas o "
-"200 para timelines de una cuenta.)"
+"la API con ellas, o usar las credenciales que proporcionamos nosotros "
+"para ello. (Esto último sólo te permitirá importar un número de tweets "
+"equivalente a una única llamada a la API de Twitter, 100 para búsquedas o"
+" 200 para timelines de una cuenta.)"
 
 #: themes/default/templates/projects/importers/twitter.html:23
 msgid "I'll use my credentials"

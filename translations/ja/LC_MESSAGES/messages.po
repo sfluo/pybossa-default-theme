@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.1.1\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: themes/default/templates/_navbar.html:12
 #: themes/default/templates/account/index.html:14
@@ -24,8 +24,8 @@ msgid "Community"
 msgstr "コミュニティ"
 
 #: themes/default/templates/_navbar.html:13
-#: themes/default/templates/base.html:78
 #: themes/default/templates/account/projects.html:13
+#: themes/default/templates/base.html:78
 #: themes/default/templates/stats/global.html:89
 msgid "Projects"
 msgstr "プロジェクト"
@@ -282,6 +282,13 @@ msgstr "パスワードのリセット"
 #: themes/default/templates/account/update.html:65
 #: themes/default/templates/account/update.html:78
 #: themes/default/templates/admin/update_category.html:23
+#: themes/default/templates/projects/importers/csv.html:24
+#: themes/default/templates/projects/importers/dropbox.html:31
+#: themes/default/templates/projects/importers/epicollect.html:26
+#: themes/default/templates/projects/importers/flickr.html:35
+#: themes/default/templates/projects/importers/gdocs.html:24
+#: themes/default/templates/projects/importers/s3.html:37
+#: themes/default/templates/projects/importers/twitter.html:44
 #: themes/default/templates/projects/new.html:27
 #: themes/default/templates/projects/new_blogpost.html:22
 #: themes/default/templates/projects/password.html:20
@@ -291,13 +298,6 @@ msgstr "パスワードのリセット"
 #: themes/default/templates/projects/task_scheduler.html:36
 #: themes/default/templates/projects/update.html:48
 #: themes/default/templates/projects/update_blogpost.html:24
-#: themes/default/templates/projects/importers/csv.html:24
-#: themes/default/templates/projects/importers/dropbox.html:31
-#: themes/default/templates/projects/importers/epicollect.html:26
-#: themes/default/templates/projects/importers/flickr.html:35
-#: themes/default/templates/projects/importers/gdocs.html:24
-#: themes/default/templates/projects/importers/s3.html:37
-#: themes/default/templates/projects/importers/twitter.html:44
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -449,6 +449,7 @@ msgstr "アップロード"
 
 #: themes/default/templates/account/update.html:47
 #: themes/default/templates/account/update.html:77
+#: themes/default/templates/projects/update.html:47
 msgid "Save the changes"
 msgstr "変更の保存"
 
@@ -1573,9 +1574,9 @@ msgstr "上位5名のユーザー"
 msgid "Setup task autoimporter"
 msgstr "タスクの自動インポートを設定"
 
+#: themes/default/templates/projects/snippets/options.html:4
 #: themes/default/templates/projects/task_autoimport_options.html:16
 #: themes/default/templates/projects/task_import_options.html:16
-#: themes/default/templates/projects/snippets/options.html:4
 msgid "Use one of the following available"
 msgstr "以下の利用可能なものを使用し、"
 
@@ -1627,8 +1628,8 @@ msgstr "プロジェクトで必要とするタスクに対する回答数"
 msgid "Set redundancy"
 msgstr "冗長性の設定"
 
-#: themes/default/templates/projects/task_presenter_editor.html:28
 #: themes/default/templates/projects/snippets/options.html:3
+#: themes/default/templates/projects/task_presenter_editor.html:28
 msgid "Task Presenter Editor"
 msgstr "タスク提供者の編集"
 
@@ -1792,7 +1793,6 @@ msgstr "冗長性"
 msgid "Import tasks from templates, GDrive, or CSV"
 msgstr "テンプレート、GDriveあるいはCSVによるタスクのインポート"
 
-#: themes/default/templates/projects/tasks.html:22
 #: themes/default/templates/projects/importers/csv.html:23
 #: themes/default/templates/projects/importers/dropbox.html:30
 #: themes/default/templates/projects/importers/epicollect.html:25
@@ -1800,6 +1800,7 @@ msgstr "テンプレート、GDriveあるいはCSVによるタスクのインポ
 #: themes/default/templates/projects/importers/gdocs.html:23
 #: themes/default/templates/projects/importers/s3.html:36
 #: themes/default/templates/projects/importers/twitter.html:43
+#: themes/default/templates/projects/tasks.html:22
 msgid "Import"
 msgstr "インポート"
 
@@ -1936,10 +1937,6 @@ msgstr "プロジェクトについて説明する（Markdownを使用！）"
 #: themes/default/templates/projects/update.html:42
 msgid "Check if you want to allow anonymous users contribute to your project"
 msgstr ""
-
-#: themes/default/templates/projects/update.html:47
-msgid "Save the changes"
-msgstr "変更を保存"
 
 #: themes/default/templates/projects/update_blogpost.html:14
 msgid "Edit the blog post"
